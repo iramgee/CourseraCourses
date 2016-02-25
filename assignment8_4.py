@@ -11,11 +11,9 @@ alist = ['Arise But It Juliet breaks east envious fair kill light moon soft sun 
 # fname = raw_input("Enter file name: ")
 # fh = open(fname)
 fh = open('romeo.txt')
-for line in fh:
-    lst = line.split() # finding all the words in this file
-    lst.sort() # putting list in order
-for x in alist:
-    n = x.split()
-    n.sort()
-n.sort()
-print n
+count = 0 # ease of use
+lst = list(fh)
+for line in lst:
+    words  = line.split() # finding all the words in this file
+
+    print words
