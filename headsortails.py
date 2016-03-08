@@ -1,8 +1,10 @@
 import random
 
-flip = random.randrange(0,2)
+flip = random.randrange(0,1001)
 
-if flip == 1:
+if flip < 500:
     print 'You got heads'
 else:
     print 'you got tails'
+
+print flip 
