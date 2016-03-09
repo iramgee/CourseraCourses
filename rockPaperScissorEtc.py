@@ -8,7 +8,7 @@ try:
 
     # validate the input
     while inp not in {'Rock', 'Paper', 'Scissor', 'Lizard', 'Spock'} :
-        inp = raw_input('Rock, Paper, Scissor, Lizard, Spock... What\'s your pick? ')
+        inp = raw_input('You must select one of the five selections. You can\'t make up your own, silly.\n Rock, Paper, Scissor, Lizard, Spock... What\'s your pick? ')
         inp = inp.capitalize()
 
 except:
@@ -52,7 +52,7 @@ elif pick < 300:
     elif inp == 'Lizard':
         print 'Scissors decapitates Lizard, you lose!'
     else:
-        print 'Spock smashes Scissors'
+        print 'Spock smashes Scissors, I lose!'
 elif pick < 400:
     print 'I pick spock'
     if inp == 'Rock':
@@ -62,7 +62,7 @@ elif pick < 400:
     elif inp == 'Scissor':
         print 'Spock smashes Scissors, you lose!'
     elif inp == 'Lizard':
-        print'Spock decapitates Lizard, you lose!'
+        print'Spock is poisoned by Lizard, I lose!'
         
     else:
         print 'Shoot again'
