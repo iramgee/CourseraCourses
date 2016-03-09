@@ -5,8 +5,6 @@ pick = random.randrange(0,501)
 try:
     inp = raw_input('Rock, Paper, Scissor, Lizard, Spock... What\'s your pick? ')
     inp = inp.capitalize()
-    if inp != 'Rock' or inp != 'Paper' or inp != 'Scissor' or inp != 'Lizard' or inp != 'Spock':
-        print ' Enter a valid response'
 
 except:
     print 'You must select one of the five selections. You can\'t make up your own, silly.'
